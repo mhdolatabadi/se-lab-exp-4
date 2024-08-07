@@ -47,3 +47,28 @@
 ![img_5.png](ProfilingTest/reportImages/img_10.png)
 
 که همانطور که مشاهده می‌کنید مصرف کاهش پیدا کرده و برنامه نیز در مدت کوتاهی اجرا می‌شود و خروجی را چاپ می‌کند.
+
+# گزارش قسمت BDD
+# بخش اول (۱)
+در تصاویر زیر اجرای مراحل ذکر شده در فایل Example.pdf به ترتیب نشان داده شده است. 
+
+
+![Screenshot from 2024-08-06 22-31-52](https://github.com/user-attachments/assets/56930e5b-9826-4f84-acf1-945187694c34)
+
+![Screenshot from 2024-08-06 22-33-52](https://github.com/user-attachments/assets/75f0c066-0fc1-450a-a374-b79ae1334d86)
+
+![Screenshot from 2024-08-06 22-39-25](https://github.com/user-attachments/assets/03315138-4cbd-4510-9981-c023960ac60e)
+
+![Screenshot from 2024-08-06 22-45-08](https://github.com/user-attachments/assets/9865750f-0509-406e-8655-c01b2add0d2e)
+
+![Screenshot from 2024-08-06 23-12-42](https://github.com/user-attachments/assets/58f6cfa3-8fae-4b39-b9c7-d23039a3b415)
+
+![Screenshot from 2024-08-06 23-16-39](https://github.com/user-attachments/assets/5fdf21a7-dae5-4a99-b152-f4a9ccb15b94)
+
+![Screenshot from 2024-08-06 23-27-20](https://github.com/user-attachments/assets/1ec4c2c9-45e9-4b8f-90ef-3661b6acee7f)
+
+![Screenshot from 2024-08-07 20-45-31](https://github.com/user-attachments/assets/46027d15-af95-4e17-903f-d0995bc05c6f)
+
+# بخش دوم (۲)
+
+این مشکل به این دلیل است که در رجکس تعریف شده ما اعداد منفی را در نظر نگرفته‌ایم (\\d+) و به همین دلیل موقع اجرای تست‌ها به این ارور میخوریم. برای اصلاح این مسئله کافی است تا رجکس مربوطه را با افزودن یک منفی به صورت اختیاری اصلاح کنیم یعنی هر جا که \\d+ داریم تبدیل به -؟\\d+ میشود. در تصویر انتهایی بخش قبل نیز نسخه‌ی اصلاح شده و سالم قابل مشاهده است که تمامی تست‌ها به درستی پاس شده‌اند.
